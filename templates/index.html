@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>Paidi Jayasri Dadi</h1>
+    <p>Frontend & Backend Developer</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+
+    <p>
+       I am a passionate developer interested in full-stack development, web technologies, and software engineering.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Flask</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Smart Timetable Sharing Portal</h3>
+        <p>Faculty timetable sharing website.</p>
+    </div>
+
+    <div class="project">
+        <h3>Farmer Crop Price Alert System</h3>
+        <p>SMS alert system for farmers.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+
+    <form action="/contact" method="POST">
+
+        <input type="text"
+        name="name"
+        placeholder="Enter Name"
+        required>
+
+        <input type="email"
+        name="email"
+        placeholder="Enter Email"
+        required>
+
+        <button type="submit">Send</button>
+
+    </form>
+</section>
+
+</body>
+</html>
